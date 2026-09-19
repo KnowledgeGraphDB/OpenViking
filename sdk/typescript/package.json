@@ -3,8 +3,14 @@
   "version": "0.1.0",
   "description": "Lightweight JavaScript and TypeScript HTTP SDK for OpenViking",
   "license": "Apache-2.0",
-  "repository": { "type": "git", "url": "git+https://github.com/volcengine/OpenViking.git", "directory": "sdk/typescript" },
-  "publishConfig": { "access": "public" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volcengine/OpenViking.git",
+    "directory": "sdk/typescript"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -16,16 +22,22 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md", "README_CN.md"],
+  "files": [
+    "dist",
+    "README.md",
+    "README_CN.md"
+  ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "build": "node init && tsup src/index.ts --format esm,cjs --dts --clean",
     "format": "prettier --write src tests",
     "format:check": "prettier --check src tests",
     "test": "vitest run",
     "test:node-types": "tsc --project tests/node-consumer/tsconfig.json",
     "typecheck": "tsc --noEmit"
   },
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "@types/node": "^22.15.3",
     "fflate": "^0.8.2",

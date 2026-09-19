@@ -74,7 +74,6 @@ diagrams/
 doc-fetch-resources/
 
 # Virtual environments
-.env
 .venv
 env/
 venv/
@@ -83,7 +82,6 @@ env.bak/
 venv.bak/
 
 # IDE
-.vscode/
 .idea/
 .obsidian/
 *.swp
@@ -187,7 +185,6 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -248,3 +245,4 @@ node_modules/
 examples/opencode-plugin/lib/shared/
 examples/dsh-memory-plugin/shared/
 examples/pi-coding-agent-extension/shared/
+config.bat
